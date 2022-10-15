@@ -1,3 +1,8 @@
+:root {
+  --standard-blue: #3838e0;
+  --standard-white: #f5f5f5;
+}
+
 * {
   margin: 0;
   padding: 0;
