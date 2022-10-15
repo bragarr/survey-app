@@ -28,3 +28,69 @@
     display: flex;
     align-items: center;
 }
+
+.side__menu {
+    position: fixed;
+    left: -100%;
+    padding-left: 1rem;
+    top: 10vh;
+    height: 100%;
+    width: 40%;
+    background-color: var(--standard-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    transition: 1s;
+}
+
+.menu__active {
+    left: 0%;
+    transition: 1s;
+}
+
+.menu__link {
+    color: var(--standard-white);
+    cursor: pointer;
+    text-decoration:dotted;
+    -webkit-user-select: none;
+    user-select: none;
+    font-size: 1.2rem;
+    margin-bottom: 3vh;
+}
+
+@media screen and (min-width:720px) {
+    .menu__icon {
+        display: none;
+    }
+
+    .app__tittle {
+        margin: 0 4rem;
+    }
+
+    .user__icon {
+        margin: 0 4rem 0 0;
+    }
+
+    .container__menu--user__icon {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .side__menu {
+        position:initial;
+        width: auto;
+        height: auto;
+        padding: 0;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .menu__link {
+        margin: 0 3rem 0 0;
+    }
+
+    .menu__link:hover {
+        text-decoration: underline;
+        transition: 2s;
+    }
+}
