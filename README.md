@@ -1,6 +1,6 @@
 # survey-app
 
-Está é uma aplicação em desenvolvimento para criação de um Survey app.
+Está é uma aplicação de um Survey app (Questionário Dev).
 
 Você pode conferir o projeto no link abaixo:
 
