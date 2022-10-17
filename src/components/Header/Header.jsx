@@ -24,6 +24,11 @@ export function Header() {
                     >
                         Home
                     </Link>
+                    <Link to={"login"}
+                        className="menu__link"
+                    >
+                        Login
+                    </Link>
                     <Link to={"signup"}
                         className="menu__link"
                     >

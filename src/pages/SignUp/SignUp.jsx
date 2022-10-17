@@ -3,63 +3,70 @@ import "./SignUp.css";
 export function SignUp() {
     return (
         <section>
-            <form className="form__container">
-                <h2>Seja Bem-vindo!</h2>
+            <article className="presantation__page">
+                <h2>Seja bem-vindo!</h2>
                 <p>Aqui você irá realizar o seu registro na nossa plataforma!</p>
-                <p>Tudo isso é realizado para simular um ambiente de cadastro</p>
+                <p>Tudo isso é realizado para simular um ambiente de cadastro!</p>
                 <p>
                     Após realizar o seu cadastro,
                     você poderá responder um questionário
                     que definirá o seu perfil como Dev.
                 </p>
-                <h3>Preencha os campos abaixo:</h3>
+                <h3>Preencha os campos abaixo e faça parte da rede!</h3>
+            </article>
+            <form className="form__container">
                 <fieldset className="register__field">
-                    <label htmlFor="nome">
-                        Nome
-                        <input
-                            id="nome"
-                            type="text"
-                            placeholder="Nome"
-                            required
-                        />
+                    <label htmlFor="nome" className="label__item">
+                        Nome:
                     </label>
-                    <label htmlFor="email">
-                        E-mail
-                        <input
-                            id="email" 
-                            type="email"
-                            placeholder="Email"
-                            required
-                        />
+                    <input
+                        className="items__register"
+                        id="nome"
+                        type="text"
+                        placeholder="Nome"
+                        required
+                    />
+                    <label htmlFor="email" className="label__item">
+                        E-mail:
                     </label>
-                    <label htmlFor="usuario">
-                        Usuário
-                        <input
-                            id="usuario"
-                            type="text"
-                            placeholder="Username"
-                            required
-                        />
+                    <input
+                        className="items__register"
+                        id="email" 
+                        type="email"
+                        placeholder="Email"
+                        required
+                    />
+                    <label htmlFor="usuario" className="label__item">
+                        Usuário:
                     </label>
-                    <label htmlFor="senha">
-                        Senha
-                        <input
-                            id="senha"
-                            type="password"
-                            placeholder="Defina a sua senha"
-                            required
-                        />
+                    <input
+                        className="items__register"
+                        id="usuario"
+                        type="text"
+                        placeholder="Username"
+                        required
+                    />
+                    <label htmlFor="senha" className="label__item">
+                        Senha:
                     </label>
-                    <label htmlFor="repeteSenha">
-                        Confirmar Senha
-                        <input
-                            id="repeteSenha"
-                            type="password"
-                            placeholder="Repita a sua senha"
-                            required
-                        />
+                    <input
+                        className="items__register"
+                        id="senha"
+                        type="password"
+                        placeholder="Defina a sua senha"
+                        required
+                    />
+                    <label htmlFor="repeteSenha" className="label__item">
+                        Confirmar Senha:
                     </label>
-                    <button>Cadastrar</button>
+                    <input
+                        className="items__register"
+                        id="repeteSenha"
+                        type="password"
+                        placeholder="Confirme a sua senha"
+                        required
+                    />
+                    <button className="button__register">Enviar</button>
                 </fieldset>
             </form>
         </section>
